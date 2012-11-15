@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Responsive web page.</title>
+	<style>
+	/*ignore these styles for the example. They are just typical layout styles and not responsive */
+	body{
+		background: #1D1D1D;
+		color: #FFF;
+	}
+	#wrapper
+	{
+		background: transparent;
+	}
+	a
+	{
+		font-size:24pt;
+		color: #FFF;
+	}
+	img
+	{
+		border:none;
+	}
+		#navdropdown, #navlinks, #header, #content, img
+		{
+			display:block;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		#navs
+		{
+			margin-top:10px;
+			margin-bottom:10px;
+			background-color:grey;
+		}
+		
+	/*end ignore*/
+	
+	/*ipad/iPhone*/
+	@media screen and (min-width: 50em){
+		
+		#navlinks
+		{
+			display:none;
+		}
+		#navdropdown, #header, #content, img
+		{
+			width:900px;
+		}
+		#header
+		{
+			font-size:20pt;
+		}
+		img
+		{
+			width:600px;
+			padding-top:10px;
+		}
+	}
+	/*typical desktop*/
+	@media screen and (min-width: 1200px){
+		#navlinks, #header, #content, img
+		{
+			width:1200px;
+			display:block;
+		}
+		#navdropdown
+		{
+			display:none;
+		}
+		#header
+		{
+			font-size:48pt;
+		}
+		img
+		{
+			width:500px;
+			float:left;
+			padding-left:50px;
+			padding-right:50px;
+			padding-top:10px;
+		}
+	}
+	</style>
+	<script src="respond.js"></script>
+</head> 
+<body>
+	<div id="wrapper">
+		<div id="header">
+			Welcome to my Responsive Site!
+		</div><!--/header-->
+		<div id="navs">
+			<div id="navlinks">
+				<a href="one">one</a>
+				<a href="two">two</a>
+				<a href="three">three</a>
+				<a href="four">four</a>
+				<a href="five">five</a>
+				<a href="six">six</a>
+			</div><!--navlinks-->
+			<div id="navdropdown">
+				Please select a menu item: <select>
+					<option value="">one</option>
+					<option value="">two</option>
+					<option value="">three</option>
+					<option value="">four</option>
+					<option value="">five</option>
+					<option value="">six</option>
+				</select>
+			</div> <!--/navdropdown-->
+		</div><!--/navs-->
+		<div id="content">
+			<div id="content-verbiage">
+			Lorizzle daahng dawg sizzle amet, consectetuer adipiscing elit. For sure crazy velit, crunk owned, suscipizzle quis, gravida vel, ghetto. Pellentesque shizznit tortizzle. Sed erizzle. Break it down izzle dolor dawg turpizzle tempizzle gangsta. Maurizzle pellentesque nibh bling bling turpizzle. Ass izzle tortor. Pellentesque eleifend stuff nisi. In nizzle i saw beyonces tizzles and my pizzle went crizzle platea dictumst. Go to hizzle doggy. Hizzle tellizzle crackalackin, pretium hizzle, gangsta ac, eleifend vitae, nunc. Dope shizznit. Integizzle semper velit sizzle fo shizzle.<br /><br />Phat interdum owned fo shizzle. Ut semper adipiscing gangster. Mammasay mammasa mamma oo sa nizzle est. Tellivizzle sapizzle fo shizzle mah nizzle fo rizzle, mah home g-dizzle, ultricizzle nizzle, accumsizzle gangster, things quis, pede. Dizzle black mammasay mammasa mamma oo sa. Shizzle my nizzle crocodizzle for sure ornare ante. Maurizzle justo. Vestibulizzle izzle mammasay mammasa mamma oo sa varius nibh commodo commodo. Dawg mammasay mammasa mamma oo sa dolizzle sit pimpin', consectetuer adipiscing elizzle. Stuff izzle my shizz. Quisque mi sizzle, sodales izzle, shizzlin dizzle a, sheezy a, elit.<br /><br />Shizzlin dizzle phat mi fo mauris posuere bibendum. Gangsta lacinia viverra lectus. Cras izzle break yo neck, yall izzle leo gangsta euismizzle. Aliquizzle bling bling, nizzle pizzle dapibizzle convallis, sure dope bibendizzle uhuh ... yih!, et venenatizzle augue fo shizzle dizzle arcu. Vivamizzle gravida lacizzle id pizzle. Vivamizzle arcu magna, fermentizzle sit amizzle, dope in, break it down izzle, maurizzle. Sizzle pizzle laoreet nibh. Vestibulizzle dizzle, hendrerizzle et, izzle, fo shizzle a, gangsta. Morbi nizzle placerat . Dizzle malesuada eros izzle erat. Fusce metizzle fo shizzle, egestizzle eu, accumsizzle shit, elementizzle egizzle, hizzle. Nulla iaculizzle ass a orci tincidunt sodales. Fusce sagittis, we gonna chung shut the shizzle up sollicitudin mollizzle, break it down doggy fo erat, crackalackin phat augue purus vitae arcu. Etiam the bizzle lacizzle. Rizzle sizzle fo. Duis yo turpis. Shut the shizzle up a pimpin'. Ass erizzle, consectetuer izzle, bizzle sheezy, fizzle izzle, go to hizzle. Owned dope. Nulla fo shizzle erizzle, tristique sizzle amet, break it down things, tincidunt pimpin', ghetto.
+			</div>
+			<div id="content-image1" class="images">
+				<img src="images/1.jpg" />
+				<img src="images/2.jpg" />
+			</div>
+		</div>
+		
+	</div><!-- /wrapper -->
+</body>
+</html>
